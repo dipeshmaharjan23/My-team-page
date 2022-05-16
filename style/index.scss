@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif:wght@400&family=Poppins:wght@400;600&display=swap");
+
+$background-color: #fafafa;
+$foot-color: #fafafa;
+$font1: "PT Serif", serif;
+$font2: "Poppins", sans-serif;
+$font3: "Montserrat", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: $background-color;
+}
+
+.container {
+  max-width: 1055px;
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+  border: 1px solid white;
+}
+
+.header {
+    width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+.sub-header{
+    width: 50%;
+}
+
+h2{
+    font-family: $font1;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 10px 0px;
+    line-height: 47.7px;
+}
+
+h3{
+    font-family: $font2;
+    font-weight: 600;
+    font-size: 18px;
+}
+p{
+    font-family: $font2;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+
+.img-container{
+    position: relative;
+}
+
+span{
+    font-family: $font1;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top:0;
+    left: 242px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.9px;
+}
+h4{
+    font-family: $font2;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+}
+.job{
+    position: absolute;
+    top: 100px;
+}
+
+.image{
+    width: 238px;
+}
+.img{
+    margin-top: 100px;
+}
+
+h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 17.07px;
+    position:absolute;
+    bottom: 10px;
+    left: 36%;
+}
+
+@media only screen and (max-width:590px)  {
+    body{
+        margin: 0 auto;
+        width: 95%;
+    }
+    .container{
+        margin: 0px auto;
+    }
+   .sub-header{
+       width: 90%;
+       margin-top: 16px;
+   }
+   .main{
+       width: 100%;
+   }
+    
+    .image{
+        width: 125px;
+    }
+    .img-container{
+        padding: 30px 0px;
+    }
+    span{
+        left: 126px;
+        top: 30px;
+    }
+    .job{
+        position: absolute;
+        top: 130px;
+    }
+    .img{
+        top: 130px;
+    }
+  
+}
